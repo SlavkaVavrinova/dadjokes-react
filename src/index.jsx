@@ -6,10 +6,10 @@ import { jokes } from './jokes';
 import { Joke } from './Joke/index';
 
 const App = () => (
-  <div class="container">
+  <div className="container">
     {jokes.map((joke) => (
       <Joke
-        key={joke.userName}
+        key={joke.id}
         userAvatar={joke.avatar}
         userName={joke.userName}
         text={joke.text}
